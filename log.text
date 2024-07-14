@@ -1,0 +1,18 @@
+14/07/2024
+
+
+Compiled 1 Solidity file successfully
+
+
+  SwapExamples
+DAI balance BigNumber { value: "3190158395237998962043" }
+    ✔ swapExactInputSingle (6182ms)
+DAI balance BigNumber { value: "3290158395237998962043" }
+    ✔ swapExactOutputSingle (546ms)
+DAI balance BigNumber { value: "6476974401195400060378" }
+    ✔ swapExactInputMultihop (8000ms)
+DAI balance BigNumber { value: "6576974401195400060378" }
+    ✔ swapExactOutputMultihop (157ms)
+
+
+  4 passing (21s)

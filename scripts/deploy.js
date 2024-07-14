@@ -3,14 +3,14 @@ const { ethers } = require("hardhat");
 
 async function main() {
   // Deploy TokenSwap contract
-  const TokenSwap = await ethers.getContractFactory("TokenSwap");
+  const TokenSwap = await ethers.getContractFactory("SwapExamples");
   const tokenSwap = await TokenSwap.deploy();
   await tokenSwap.deployed();
   console.log("TokenSwap deployed to:", tokenSwap.address);
 
   // Deploy LiquidityManager contract
-  const LiquidityManager = await ethers.getContractFactory("LiquidityManager");
-  const liquidityManager = await LiquidityManager.deploy(tokenSwap.address);
+  const LiquidityManager = await ethers.getContractFactory("TokenSwap");
+  const liquidityManager = await LiquidityManager.deploy();
   await liquidityManager.deployed();
   console.log("LiquidityManager deployed to:", liquidityManager.address);
 
